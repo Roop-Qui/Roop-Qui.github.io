@@ -46,11 +46,10 @@ body > header > nav > ul > li{
      text-decoration: none;
 }
 
-body > main article {
-    width: 90%;
+body > main > article {
+    width: 97%;
     margin: auto;
 }
-
 
 #main-content{
     display: flex;
@@ -61,7 +60,28 @@ body > main article {
 }
 
 #main-content > div {
-    width: 80%;
+    width:95%;
+}
+
+#pic_3 {grid-area: pic3;}
+#p3 {grid-area: p3;}
+#pic_2 {grid-area: pic2;}
+#p2 {grid-area: p2;}
+#pic_1 {grid-area: pic1;}
+#p1 {grid-area: p1;}
+
+main {
+    display: grid;
+    grid-template-areas:
+    "p3 pic3"
+    "pic2 p2"
+    "p1 pic1"
+    ;
+    grid-template-columns: 1fr 1fr;
+}
+
+article {
+ 
 }
 
 form {
@@ -70,6 +90,8 @@ form {
 
 h2{
     text-align: center;
+    padding: 0px;
+    border-width: 0px;
 }
  
 img {
@@ -120,3 +142,10 @@ body > footer > h1 {
     border: 1px rgb(245, 167, 167);
     align-items: center;
 }
+
+hr {
+    text-align: center;
+}
+ hr > form {
+    text-align: center;
+ }
