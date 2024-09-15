@@ -15,6 +15,9 @@ body > header {
     width: 100%;
     align-items: center;
 } 
+body > header > img {
+    margin-left: 10px;
+}
 cite > a {margin: 100px;}
 body > header > h1 {
     margin: 0px; 
@@ -70,17 +73,24 @@ h2{
 }
  
 img {
-    border-radius: 20%;
+    border-radius: 10px;
 }
 
 body > footer {
     margin: 0px;
     display:flex;
-    background-color: rgb(158, 74, 74)
-
+    background-color: rgb(158, 74, 74);
+    box-shadow: 5px 0px 2px 5px black; 
 
 }
-body > footer > h2 {  
+body > footer > img {
+    max-width: 90px; /* Adjust to your preferred width */
+    height: 80px; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    border-radius: 10px; /* Applies rounded corners */
+   
+}
+body > footer > h1 {  
     background-color: rgb(158, 74, 74);
     margin: 0px;
     color: rgb(247, 153, 124);
